@@ -46,7 +46,7 @@ const CreateNFT = () => {
       const metadataURI = `https://ipfs.io/ipfs/${created.path}`
       const nft = { title, price, description, metadataURI }
 
-      setLoadingMsg('Intializing transaction...')
+      setLoadingMsg('Khởi tạo giao dịch...')
       setFileUrl(metadataURI)
       await mintNFT(nft)
 
@@ -92,7 +92,7 @@ const CreateNFT = () => {
       <div className="bg-[#151c25] shadow-xl shadow-[#e32970] rounded-xl w-11/12 md:w-2/5 h-7/12 p-6">
         <form className="flex flex-col">
           <div className="flex flex-row justify-between items-center">
-            <p className="font-semibold text-gray-400">Add NFT</p>
+            <p className="font-semibold text-gray-400">Tạo Thêm NFT</p>
             <button
               type="button"
               onClick={closeModal}
@@ -117,7 +117,7 @@ const CreateNFT = () => {
 
           <div className="flex flex-row justify-between items-center bg-gray-800 rounded-xl mt-5">
             <label className="block">
-              <span className="sr-only">Choose profile photo</span>
+              <span className="sr-only">Chọn Ảnh </span>
               <input
                 type="file"
                 accept="image/png, image/gif, image/jpeg, image/webp"
@@ -141,7 +141,7 @@ const CreateNFT = () => {
                 focus:outline-none focus:ring-0"
               type="text"
               name="title"
-              placeholder="Title"
+              placeholder="Tiêu Đề"
               onChange={(e) => setTitle(e.target.value)}
               value={title}
               required
@@ -157,7 +157,7 @@ const CreateNFT = () => {
               step={0.01}
               min={0.01}
               name="price"
-              placeholder="Price (Eth)"
+              placeholder="Giá (Eth)"
               onChange={(e) => setPrice(e.target.value)}
               value={price}
               required
@@ -171,7 +171,7 @@ const CreateNFT = () => {
                 focus:outline-none focus:ring-0 h-20"
               type="text"
               name="description"
-              placeholder="Description"
+              placeholder="Miêu Tả"
               onChange={(e) => setDescription(e.target.value)}
               value={description}
               required
@@ -189,7 +189,7 @@ const CreateNFT = () => {
               hover:border hover:border-[#bd255f]
               focus:outline-none focus:ring mt-5"
           >
-            Mint Now
+            Tạo Ngay
           </button>
         </form>
       </div>
