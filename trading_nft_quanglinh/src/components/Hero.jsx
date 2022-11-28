@@ -15,11 +15,11 @@ const Hero = () => {
       <div className="md:w-3/6 w-full">
         <div>
           <h1 className="text-white text-5xl font-bold">
-            Buy and Sell <br /> Digital Arts, <br />
+            Mua Bán <br /> Tài Sản Kĩ Thuật Số, <br />
             <span className="text-gradient">NFTs</span> Collections
           </h1>
           <p className="text-gray-500 font-semibold text-sm mt-3">
-            Mint and collect the hottest NFTs around.
+            Tạo NFT.
           </p>
         </div>
 
@@ -30,7 +30,7 @@ const Hero = () => {
             rounded-full cursor-pointer p-2"
             onClick={onCreatedNFT}
           >
-            Create NFT
+            Tạo NFT
           </button>
         </div>
 
