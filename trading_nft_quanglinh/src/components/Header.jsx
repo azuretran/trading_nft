@@ -40,7 +40,7 @@ const Header = () => {
           rounded-full cursor-pointer"
           onClick={connectWallet}
         >
-          Connect Wallet
+          Kết Nối Tới Ví
         </button>
       )}
     </nav>

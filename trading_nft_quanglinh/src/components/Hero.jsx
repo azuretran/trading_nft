@@ -37,15 +37,15 @@ const Hero = () => {
         <div className="w-3/4 flex justify-between items-center mt-5">
           <div>
             <p className="text-white font-bold">1231k</p>
-            <small className="text-gray-300">User</small>
+            <small className="text-gray-300">Người Dùng</small>
           </div>
           <div>
             <p className="text-white font-bold">152k</p>
-            <small className="text-gray-300">Artwork</small>
+            <small className="text-gray-300">Tác Phẩm</small>
           </div>
           <div>
             <p className="text-white font-bold">200k</p>
-            <small className="text-gray-300">Artist</small>
+            <small className="text-gray-300">Họa Sĩ</small>
           </div>
         </div>
       </div>

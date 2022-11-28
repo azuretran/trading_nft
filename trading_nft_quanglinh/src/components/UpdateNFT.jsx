@@ -18,10 +18,10 @@ const UpdateNFT = () => {
     if (!price || price <= 0) return
 
     setGlobalState('modal', 'scale-0')
-    setGlobalState('loading', { show: true, msg: 'Initiating price update...' })
+    setGlobalState('loading', { show: true, msg: 'Đang cập nhật giá...' })
 
     try {
-      setLoadingMsg('Price updating...')
+      setLoadingMsg('Giá đang cập nhật...')
       setGlobalState('updateModal', 'scale-0')
 
       await updateNFT({ ...nft, cost: price })
@@ -71,7 +71,7 @@ const UpdateNFT = () => {
               step={0.01}
               min={0.01}
               name="price"
-              placeholder="Price (Eth)"
+              placeholder="Giá (Eth)"
               onChange={(e) => setPrice(e.target.value)}
               required
             />
@@ -88,7 +88,7 @@ const UpdateNFT = () => {
             hover:border hover:border-[#bd255f]
             focus:outline-none focus:ring mt-5"
           >
-            Update Now
+            Cập Nhật Ngay
           </button>
         </form>
       </div>

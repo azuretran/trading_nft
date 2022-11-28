@@ -36,7 +36,7 @@ const Artworks = () => {
             rounded-full cursor-pointer p-2"
               onClick={() => setEnd(end + count)}
             >
-              Load More
+              Xem Thêm
             </button>
           </div>
         ) : null}
@@ -62,7 +62,7 @@ const Card = ({ nft }) => {
       <p className="text-gray-400 text-xs my-1">{nft.description}</p>
       <div className="flex justify-between items-center mt-3 text-white">
         <div className="flex flex-col">
-          <small className="text-xs">Current Price</small>
+          <small className="text-xs">Giá Hiện Tại</small>
           <p className="text-sm font-semibold">{nft.cost} ETH</p>
         </div>
 
@@ -71,7 +71,7 @@ const Card = ({ nft }) => {
             hover:bg-[#bd255f] cursor-pointer rounded-full px-1.5 py-1"
           onClick={setNFT}
         >
-          View Details
+          Xem Chi Tiết
         </button>
       </div>
     </div>

@@ -22,11 +22,11 @@ const ShowNFT = () => {
 
     try {
       await buyNFT(nft)
-      setAlert('Transfer completed...', 'green')
+      setAlert('Hoàn Thành...', 'green')
       window.location.reload()
     } catch (error) {
       console.log('Error transfering NFT: ', error)
-      setAlert('Purchase failed...', 'red')
+      setAlert('Trả Giá Thất Bại...', 'red')
     }
   }
 
@@ -79,7 +79,7 @@ const ShowNFT = () => {
               </div>
 
               <div className="flex flex-col">
-                <small className="text-xs">Current Price</small>
+                <small className="text-xs">Giá Hiện Tại</small>
                 <p className="text-sm font-semibold">{nft?.cost} ETH</p>
               </div>
             </div>
@@ -96,7 +96,7 @@ const ShowNFT = () => {
                 focus:outline-none focus:ring mt-5"
                 onClick={onChangePrice}
               >
-                Change Price
+                Thay Đổi Giá
               </button>
             ) : (
               <button
@@ -109,7 +109,7 @@ const ShowNFT = () => {
                 focus:outline-none focus:ring mt-5"
                 onClick={handleNFTPurchase}
               >
-                Purchase Now
+                Mua Ngay
               </button>
             )}
           </div>

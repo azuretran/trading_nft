@@ -35,9 +35,9 @@ const Transactions = () => {
               </div>
 
               <div>
-                <h4 className="text-sm">{tx.title} Transfered</h4>
+                <h4 className="text-sm">{tx.title} Đã gửi</h4>
                 <small className="flex flex-row justify-start items-center">
-                  <span className="mr-1">Received by</span>
+                  <span className="mr-1">Đã nhận bởi</span>
                   <a href="#" className="text-pink-500 mr-2">
                     {truncate(tx.owner, 4, 4, 11)}
                   </a>
@@ -60,7 +60,7 @@ const Transactions = () => {
             rounded-full cursor-pointer p-2"
               onClick={() => setEnd(end + count)}
             >
-              Load More
+              Xem Thêm
             </button>
           </div>
         ) : null}
